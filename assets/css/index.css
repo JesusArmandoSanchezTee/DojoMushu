@@ -7,6 +7,49 @@
     box-sizing: border-box;
 }
 
+@keyframes judofancy{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-50deg);
+    }
+
+}
+
+@keyframes taekwondoicono{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(8deg)
+    }
+}
+
+@keyframes taekwondogolpe{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    5%{
+        transform: rotate(3deg);
+    }
+
+    50%{
+        transform: rotate(-10deg);
+    }
+}
+
+.gradiente{
+    background-image: linear-gradient(to right top, #ea121a, #f10049, #e90075, #d000a0, #a32ac5, #7843c8, #4a4ec3, #0054b7, #004c8e, #003c5e, #002933, #101515);
+}
+
 body{
     background-color: white;
 }
@@ -128,7 +171,7 @@ ul a:hover{
 .main__descripcion{
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 23px;
 }
@@ -174,6 +217,7 @@ aside h2{
 }
 
 .main__icono-judo{ 
+    animation: judofancy 4s infinite;
     padding: 1px 40px;
     height: auto;
     float: left;
@@ -181,6 +225,7 @@ aside h2{
 }
 
 .main__frase-judo{
+    color: white;
     text-align: right;
     font-family: 'Roboto Serif', sans-serif;
     font-size: 23px;
@@ -238,6 +283,7 @@ aside h2{
 }
 
 .main__icono-taekwondo{ 
+    animation: taekwondoicono 4s infinite;
     padding: 1px 40px;
     height: auto;
     float: left;
@@ -245,6 +291,7 @@ aside h2{
 }
 
 .main__frase-taekwondo{
+    color: white;
     text-align: right;
     font-family: 'Roboto Serif', sans-serif;
     font-size: 23px;
@@ -279,6 +326,7 @@ aside h2{
 
 
 .main__imagen-taekwondo{
+    animation: taekwondogolpe 4s infinite;
     width: 400px;
     margin: 50px 50px;
     padding-left: 0px;
